@@ -22,6 +22,18 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.rmrbranco.folds.ui.theme.FoldsTheme
 import kotlin.system.exitProcess
 
+/**
+ * MainActivity is the primary entry point for the Folds application.
+ *
+ * This activity handles the initial setup of the app, including checking and
+ * requesting permission to ignore battery optimizations, setting up the UI, and
+ * managing the main content display.
+ *
+ * It also ensures that the app runs continuously by prompting the user to allow
+ * background usage if battery optimizations are enabled for the app. If the user
+ * denies this request, the app is terminated.
+ *
+ */
 
 class MainActivity : ComponentActivity() {
     @SuppressLint("ObsoleteSdkInt")

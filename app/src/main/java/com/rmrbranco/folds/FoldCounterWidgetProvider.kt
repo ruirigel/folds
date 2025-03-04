@@ -8,6 +8,14 @@ import android.content.Intent
 import android.widget.RemoteViews
 import android.util.Log
 
+/**
+ * [FoldCounterWidgetProvider] is responsible for managing the Fold Counter widget.
+ *
+ * This class handles widget updates, including retrieving the current fold count
+ * from shared preferences, updating the widget's UI with the count, and ensuring
+ * the [FoldCounterService] is running.
+ */
+
 class FoldCounterWidgetProvider : AppWidgetProvider() {
 
     override fun onUpdate(

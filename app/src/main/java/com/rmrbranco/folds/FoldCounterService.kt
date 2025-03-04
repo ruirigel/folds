@@ -18,6 +18,33 @@ import android.util.Log
 import android.widget.RemoteViews
 import androidx.core.app.NotificationCompat
 
+/**
+ * FoldCounterService is a foreground service that monitors the device's folding sensor
+ * to count the number of times the device has been folded. It utilizes the device's
+ * hinge sensor (if available) to detect the folding action and increments the fold count
+ * accordingly. The fold count is persisted across app sessions using SharedPreferences,
+ * and it also updates the FoldCounterWidget with the latest count.
+ *
+ * <p>
+ * This service performs the following main tasks:
+ * <ul>
+ *     <li><b>Sensor Monitoring:</b> Listens for changes in the hinge sensor's state.</li>
+ *     <li><b>Fold Detection:</b> Detects when a fold occurs based on sensor readings.</li>
+ *     <li><b>Count Management:</b> Increments and stores the fold count.</li>
+ *     <li><b>Widget Update:</b> Updates the associated widget with the current fold count.</li>
+ *     <li><b>Foreground Service:</b> Runs as a foreground service to ensure continuous operation.</li>
+ *     <li><b>Persistence:</b> Saves and loads the fold count using SharedPreferences.</li>
+ * </ul>
+ * </p>
+ *
+ * <p>
+ * <b>Key Features:</b>
+ * <ul>
+ *     <li><b>Hinge Sensor Detection:</b> Automatically detects and uses the device's hinge sensor.</li>
+ *     <li><b>Background Operation:</b> Operates in the background, continuously monitoring the fold status.</li>
+ *     <li><b>Persistent Count:</b> The fold count persists across device reboots and app restarts.</li>
+ *     <li><b>Widget Integration:</b> Seamlessly updates a */
+
 class FoldCounterService : Service(), SensorEventListener {
 
     private lateinit var sensorManager: SensorManager
