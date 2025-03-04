@@ -4,4 +4,4 @@ It features a home screen widget that displays the fold count and ensures contin
 even after a device restart. Built with Kotlin, and optimized for 
 foldable devices with hinge sensor.
 
-<img src="./prtsc1.png" width=30% height=30% alt=""> <img src="./prtsc2.png" width=30% height=30% alt="">
+<img src="./Screenshot_20250304_152638.png" width=30% height=30% alt="">
