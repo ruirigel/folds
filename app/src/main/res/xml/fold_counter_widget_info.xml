@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
     android:initialLayout="@layout/fold_counter_widget"
-    android:minWidth="110dp"
-    android:minHeight="40dp"
+    android:minWidth="60dp"
+    android:minHeight="30dp"
     android:previewImage="@drawable/photo_2025_03_04_15_04_12"
     android:resizeMode="horizontal|vertical"
     android:updatePeriodMillis="1800000"
